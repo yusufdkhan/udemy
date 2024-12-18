@@ -7,9 +7,11 @@
 .main-div {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0px 18px 11px 18px;
+
   align-items: center;
   margin: 10px 0;
+  box-shadow: 10px 4px 4px lightgray;
 }
 .explore-section {
   display: flex;
@@ -70,4 +72,34 @@
 }
 .svg-globe {
   font-size: 20px;
+}
+/* hero section */
+.hero-heading {
+  font-size: 36px;
+  padding: 14px 0 0 10px;
+}
+.hero-desc {
+  font-size: 20px;
+  color: gray;
+  padding-left: 10px;
+}
+/* middle carousel */
+
+.middleCarousel-div {
+  display: flex;
+  gap: 20px;
+  padding-left: 12px;
+  padding-top: 28px;
+  border-bottom: 1px gray solid;
+}
+.middleButton {
+  font-size: 20px;
+ 
+  color: gray;
+  border: none;
+  background-color: transparent;
+}
+.middleButton:hover {
+  color: black;
+  cursor: pointer;
 }

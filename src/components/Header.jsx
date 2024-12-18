@@ -4,7 +4,7 @@ import { SlGlobe } from "react-icons/sl";
 import { CiSearch } from "react-icons/ci";
 
 const Header = ({ header }) => {
-  console.log(header?.links[0]?.name, "headerdata");
+  // console.log(header?.links[0]?.name, "headerdata");
 
   return (
     <div className="main-div">
@@ -26,8 +26,8 @@ const Header = ({ header }) => {
         <IoCartOutline className="svg-cart" />
       </div>
       <div className="login-div">
-        {header?.userOptions?.map((item) => {
-          return <button>{item.name}</button>;
+        {header?.userOptions?.map((item, i) => {
+          return <button key={i}>{item.name}</button>;
         })}
       </div>
       <div className="globe-div">
